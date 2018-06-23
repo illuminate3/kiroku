@@ -1,0 +1,27 @@
+{
+    "name": "illuminate3/kiroku",
+    "description": "",
+    "type": "module",
+    "authors": [{
+        "name": "illuminate3",
+        "email": "sapporo.ice@gmail.com"
+    }],
+    "require": {
+        "arcanedev/log-viewer": "^4.5"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Kiroku\\Providers\\KirokuServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Kiroku\\": ""
+        }
+    }
+}

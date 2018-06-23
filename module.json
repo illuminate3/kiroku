@@ -1,0 +1,16 @@
+{
+    "name": "Kiroku",
+    "alias": "kiroku",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\Kiroku\\Providers\\KirokuServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}
