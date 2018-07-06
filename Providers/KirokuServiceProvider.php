@@ -45,27 +45,18 @@ class KirokuServiceProvider extends ServiceProvider
      */
     protected function registerConfig()
     {
-        $this->publishes([
-            __DIR__ . '/../Config/config.php' => config_path('kiroku.php'),
-        ], 'config');
-
-        $this->publishes([
-            __DIR__ . '/../Config/logging.php' => config_path('logging.php'),
-        ], 'config');
+        // $this->publishes([
+        //     __DIR__ . '/../Config/config.php' => config_path('kiroku.php'),
+        // ], 'config');
 
         $this->publishes([
             __DIR__ . '/../Config/log-viewer.php' => config_path('log-viewer.php'),
+            __DIR__ . '/../Config/logging.php' => config_path('logging.php'),
         ], 'config');
 
-        $this->mergeConfigFrom(
-            __DIR__ . '/../Config/config.php',
-            'config'
-        );
-
-        // publish vendor views
-        $this->publishes([
-            __DIR__ . '/../Resources/views/vendor/log-viewer' => resource_path('views/vendor/log-viewer'),
-        ], 'config');
+        // $this->mergeConfigFrom(
+        //     __DIR__ . '/../Config/config.php', 'nintei'
+        // );
     }
 
     /**
